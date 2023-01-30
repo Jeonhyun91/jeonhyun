@@ -1,0 +1,25 @@
+<script>
+    const page01 = new Swiper("#page01 .swiper",{
+  loop:true,
+  effect: "fade",
+        pagination: {
+          el: "#page01 .swiper-pagination",},
+	});
+    
+    const page02 = new Swiper("#page02 .swiper",{
+  loop:true,
+  effect: "fade",
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        }
+	});
+    
+    $(function(){
+        
+        $("#menu .button").on("click",function(){
+            $("#menu").toggleClass("view");
+        });
+    })
+    
+</script>
